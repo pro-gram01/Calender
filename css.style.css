@@ -1,0 +1,49 @@
+body {
+  font-family: 'Courier New',monospace;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #eee;
+}
+
+thead,
+tfoot {
+  background: #eee;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tbody td:first-child {
+  color: red;
+}
+
+tbody td:last-child {
+  color:blue;
+}
+
+tfoot {
+  font-weight: bold;
+}
+/* その月以外の日付は薄く表示する */
+td.disabled {
+  opacity: 0.3;
+}
+/* 今日の日付は太字で表示する */
+td.today {
+  font-weight: bold;
+}
+/* 前月、来月、Todayボタンはクリックしても選択されないようにする
+カーソルをポインターにする */
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
+
